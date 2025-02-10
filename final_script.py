@@ -1,7 +1,7 @@
 import json
 import re
 
-pattern = pattern = re.compile(r'(\{.*?\})')
+pattern = re.compile(r'(\{.*?\})')
 
 messages = {}
 
@@ -24,7 +24,7 @@ with open('MOCK_DATA_same.json', 'r') as file:
                 for k, v in messages[match_id].items():
                     # print(k,v)
                     if match_formatted[k] == messages[match_id][k]:
-                        if k == 'id':
+                        if k == 'id': # convert to list of keys to look at
                             continue
                         match_formatted[k] = 'null'
             #else:
@@ -32,4 +32,5 @@ with open('MOCK_DATA_same.json', 'r') as file:
 
             messages[match_formatted['id']] = match_formatted
 
-print(messages)
+# Create output which is a list - output each line to list
+# if an intial value, omit it as it can't be evaluated
