@@ -60,4 +60,29 @@ Look into MapReduce, VSStudio code, set timer to se improvements.
 Why is threading faster?
 
 
+Threading Task
+
+Use threading module
+
+get 1,000,000 random numbers - an array
+
+go through in a for loop and add them all together
+
+initially just sum for the array
+
+then split to two lots of 500,000 numbers and run in 2 threads and then join and sum
+
+then split to two lots of 250,000 numbers and run in 4 threads
+
+then 8 threads split into 8ths
+
+then 16 threads
+
+then 24 threads
+
+Calculate time for each number of these options
+Experiment with more or less data.
+
+Visualize results/graph
+
 

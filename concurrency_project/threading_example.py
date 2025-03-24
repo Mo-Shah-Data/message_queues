@@ -3,7 +3,7 @@ import time
 # Function to simulate a time-consuming task
 def print_numbers():
     for i in range(1, 6):
-        print("Printing number {i}")
+        print(f"Printing number {i}")
         time.sleep(1)  # Simulate a delay of 1 second
 # Function to simulate another task
 def print_letters():

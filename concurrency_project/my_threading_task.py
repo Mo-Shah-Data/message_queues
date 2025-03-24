@@ -4,10 +4,8 @@ This script will use the car_org.json file to chunk the messages and execute the
 
 """
 
-import concurrent.futures  as cf
+import concurrent.futures as cf
 import os
-
-
 
 def main():
 
